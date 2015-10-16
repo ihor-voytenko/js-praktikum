@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<script>
+    var numbers = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47];
+
+     var sum = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    alert( sum );
+
+
+
+
+    for (var i = 0; i < numbers.length; i++) {
+        if(numbers[i] > numbers[0]){
+            numbers[0] = numbers[i];
+        }
+
+    }
+    alert(numbers[0]);
+
+    for (var i = 0; i < numbers.length; i++) {
+        if(numbers[i] < numbers[0]){
+            numbers[0] = numbers[i];
+        }
+
+    }
+    alert(numbers[0]);
+</script>
+
+<!--<script>-->
+    <!--var username = prompt('Ведите Логин','');-->
+
+     <!--if (username == 'Админ') {-->
+        <!--var pass = prompt( 'Ведите пароль','');-->
+        <!--if (pass == 'Чёрный Властелин') {-->
+            <!--alert('Добро пожаловать!')-->
+        <!--}else if( pass == null){-->
+            <!--alert( 'Вход отменён' );-->
+        <!--}else{-->
+             <!--alert( 'Пароль неверен' );-->
+         <!--}-->
+    <!--} else if( username == null){-->
+         <!--alert( 'Вход отменён' );-->
+     <!--}else{-->
+         <!--alert( 'Я вас не знаю' );-->
+     <!--}-->
+
+<!--</script>-->
+
+<!--<div>-->
+    <!--<input id="numbX" type="text"/>-->
+    <!--<input id="numberY" type="text"/>-->
+    <!--<button id="equals">=</button>-->
+    <!--<span id="Result"></span>-->
+    <!--<button id="plus" class="control">+</button>-->
+    <!--<button id="minus" class="control">-</button>-->
+    <!--<button id="multiply" class="control">*</button>-->
+    <!--<button id="deli" class="control"> /</button>-->
+    <!--<button id="refresh">C</button>-->
+    <!--<script>-->
+
+        <!--window.onload = function () {-->
+
+            <!--/** console.log */-->
+
+            <!--// calc-->
+            <!--var numbX = document.getElementById('numbX');-->
+            <!--var numberY = document.getElementById('numberY');-->
+            <!--var Result = document.getElementById('Result');-->
+
+            <!--var controls = document.querySelectorAll('.control');-->
+
+            <!--for (var i = 0; i < controls.length; i++) {-->
+                <!--controls[i].addEventListener('click', function (event) {-->
+                    <!--var x = parseInt(numbX.value);-->
+                    <!--var y = parseInt(numberY.value);-->
+                    <!--var id = event.target.id;-->
+                    <!--var r;-->
+                    <!--if (id === 'plus') {-->
+                        <!--r = x + y;-->
+                    <!--} else if (id === 'minus') {-->
+                        <!--r = x - y;-->
+                    <!--} else if (id === 'multiply') {-->
+                        <!--r = x * y;-->
+                    <!--} else if (id === 'deli') {-->
+                        <!--r = x / y;-->
+                    <!--}-->
+                    <!--Result.innerHTML = r;-->
+                <!--}, false);-->
+            <!--}-->
+
+            <!--// calc-->
+            <!--var refresh = document.getElementById('refresh');-->
+
+            <!--refresh.onclick = function () {-->
+                <!--document.getElementById('numbX').value = "";-->
+                <!--document.getElementById('numberY').value = "";-->
+                <!--document.getElementById("Result").innerHTML = "";-->
+
+            <!--}-->
+
+        <!--}-->
+
+
+    <!--</script>-->
+<!--</div>-->
+</body>
+</html>
